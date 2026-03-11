@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Emp=[{"name":"ABC","age":30},
+                 {"name":"xyz","age":52},
+                 {"name":"pqr","age":43} ]
+        var e=Emp.sort((a,b)=>b.age-a.age);
+        for(i of e)
+        {
+            console.log(i.name+" "+i.age);
+        }
+        document.write(`<h1> ${e[0].name} is employee with the highest age ${e[0].age}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a={"FSD":[{"topic":"JSON","Phase":"T1"},{"topic":"Express","Phase":"T2"}]}
+        document.write(`<table border="1">
+            <tr><th>topic</th>
+                <th>Phase</th></tr>
+            <tr><td>${a.FSD[0].topic}</td>
+                <td>${a.FSD[0].Phase}</td>
+            </tr>
+            
+            <tr><td>${a.FSD[1].topic}</td>
+                <td>${a.FSD[1].Phase}</td>
+            </tr>`)
+    </script>
+</body>
+</html>
