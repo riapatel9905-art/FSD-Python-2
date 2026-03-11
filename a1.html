@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var data={"test":[{"t1":"a","t2":"b"},{"t3":"c"}],
+        "name":"ABC", //string type
+        "age":20, //number
+        "marks":{"FSD-2":22,"Python-2":20},//object
+        "Friends":["PQR","MNO","JKL"] ,//array
+        "present":true,//boolean
+        "hobby":null,//null
+    }
+    console.log(data);
+    console.log(data.name);
+    console.log(data["age"]);
+    console.log(data["marks"]["FSD-2"]); //console.log(data.marks.FSD2)
+    console.log(data.Friends[2]);
+    console.log("Hobby of "+data.name+" is "+data.hobby);
+    console.log(data.test[1].t3);
+</script>
+</body>
+</html>
