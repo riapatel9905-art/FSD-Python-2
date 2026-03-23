@@ -1,0 +1,10 @@
+https://video.google.com:80/videopath?id=10&name.pqr#page
+
+https=protocol
+://=slash
+video=subdomain
+google.com=domain
+:80=protocol
+/videopath=path
+id=10&name=parameters
+#page=fragment
