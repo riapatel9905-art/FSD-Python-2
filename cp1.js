@@ -1,13 +1,13 @@
-var express=require("express");
+var express=require('express')
 var app=express();
-var cp =require("cookie-parser");
-app.use(cp());
-app.get("/",(req,res)=>{
-    res.cookie("Fname","Test");
-    res.cookie("lname","XYZ");
-    res.cookie("subject","FSD2",{maxAge:5000});
-    res.send(req.cookies);
-    
+var cp=require('cookie-parser');
+app.use(cp())
+app.get('/',(req,res)=>{
+    res.cookie('fname','Test')
+    res.cookie('lname','test1')
+    res.cookie('Lname','FSD2',{maxAge:5000})
+    res.cookie('email',"text@gmail.com",{expires:new Date(Date.now()+10000)})
+    res.clearCookie("lname")
+    res.send(req.cookies)
 })
-app.listen(3009);
-/*browser->localhost:3009-->inspect-->application(arrow)-->gives the cookies*/
+app.listen(5000)
